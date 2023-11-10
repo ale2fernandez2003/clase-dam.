@@ -48,7 +48,24 @@ public class Alumno {
      * en su cuenta de Github en formato de 7 caracateres
      */
     public String getNombreUsuarioGithub() {
-        return nombre.substring(0, 3) + numeroMatricula.substring(0, 4);
+        String resultado = "";
+        String resultadoNombre = "";
+        String resultadoMatricula = "";
+        if (nombre.length()<=3){
+            resultadoNombre = nombre;
+        }
+        else{
+            resultadoNombre = nombre.substring(0,3);
+        }
+
+        if (numeroMatricula.length()<=4){
+            resultadoMatricula = numeroMatricula;
+        }
+        else{
+            resultadoMatricula = numeroMatricula.substring(0,4);
+        }
+        resultado = resultadoNombre + resultadoMatricula;
+        return resultado;
     }
     
     public boolean esMayorDeEdad() {
