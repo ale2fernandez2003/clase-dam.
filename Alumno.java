@@ -54,4 +54,13 @@ public class Alumno {
     public boolean esMayorDeEdad() {
         return edad >= 18;
     }
+    
+    public void mostrarSiEsMayorDeEdad(){
+        if(edad >= 18){
+            System.out.println("El alumno es mayor de edad.");
+        }
+        else{
+            System.out.println("El alumno es menor de edad.");
+        }
+    }
 }
