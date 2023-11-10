@@ -14,6 +14,12 @@ public class Alumno {
         nombre = nombreCompleto;
         numeroMatricula = numeroMatriculaAlumno;
         edad = edadAlumno;
+        if (nombreCompleto.length() < 3) {
+            System.err.println("Error, necesita tenes 3 caracteres como minimo.");
+        }
+        if (numeroMatriculaAlumno.length() < 4) {
+            System.err.println("Error, el número de matrícula del alumno necesita 4 caracteres como minimo.");
+        }
     }
 
     /**
